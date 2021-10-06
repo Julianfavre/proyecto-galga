@@ -1,0 +1,527 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*COLORES*/
+/*TAMAÑOS*/
+@media screen and (max-width: 768px) {
+  .inicioPadre, .cicloviasPadre, .quienesSomosPadre, .galgasPadre, .contactoPadre {
+    grid-template-columns: 1fr; }
+  .inicioCaracteristicasPadre, .galgasModelosPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column; }
+  p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 4px; } }
+
+@media screen and (max-width: 425px) {
+  header a img {
+    visibility: hidden; }
+  .inicioCaracteristicasPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column; }
+  p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 4px; } }
+
+@media screen and (max-width: 320px) {
+  header a img {
+    visibility: hidden; }
+  .inicioCaracteristicasPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column;
+    padding: 1px; }
+  p {
+    font-size: 11px;
+    text-align: justify;
+    margin: 4px; } }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  background-color: #EDEDED; }
+  header .nav {
+    text-align: center; }
+    header .nav .menu {
+      list-style: none;
+      font-family: 'Staatliches';
+      letter-spacing: 1px;
+      word-spacing: 1px; }
+      header .nav .menu .itemMenu {
+        color: #EDEDED;
+        display: inline-block;
+        padding: 0.5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        border-radius: 0.8rem;
+        position: relative;
+        background-color: #EDEDED; }
+        header .nav .menu .itemMenu :hover {
+          transform: scale(1.1); }
+        header .nav .menu .itemMenu a {
+          text-decoration: none; }
+
+li :hover {
+  color: #02305a; }
+
+a img {
+  width: 60%;
+  height: 60%;
+  align-self: flex-end; }
+
+.submenu {
+  position: absolute;
+  list-style: none;
+  text-align: center;
+  font-size: 12px;
+  background-color: #EDEDED;
+  border-radius: 0.8rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  display: none; }
+  .submenu li a {
+    text-decoration: none;
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+
+.menu li:hover .submenu {
+  display: block; }
+
+/*COLORES*/
+/*TAMAÑOS*/
+@media screen and (max-width: 768px) {
+  .inicioPadre, .cicloviasPadre, .quienesSomosPadre, .galgasPadre, .contactoPadre {
+    grid-template-columns: 1fr; }
+  .inicioCaracteristicasPadre, .galgasModelosPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column; }
+  p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 4px; } }
+
+@media screen and (max-width: 425px) {
+  header a img {
+    visibility: hidden; }
+  .inicioCaracteristicasPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column; }
+  p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 4px; } }
+
+@media screen and (max-width: 320px) {
+  header a img {
+    visibility: hidden; }
+  .inicioCaracteristicasPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column;
+    padding: 1px; }
+  p {
+    font-size: 11px;
+    text-align: justify;
+    margin: 4px; } }
+
+.inicioPadre, .quienesSomosPadre, .galgasPadre, .cicloviasPadre, .contactoPadre {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*INDEX*/
+.inicioPadre {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  place-items: center;
+  background-image: url(../Img/imgPortada.jpg); }
+
+.inicioCaracteristicasPadre {
+  display: grid;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  align-content: center;
+  grid-template-columns: repeat(3, 3fr); }
+
+.inicioHijo {
+  opacity: 80%; }
+
+.inicioCaracteristicasHijo {
+  background-color: #67bdce;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  justify-content: space-between;
+  order: -1;
+  border-radius: 40px 40px 40px 40px;
+  -moz-border-radius: 40px 40px 40px 40px;
+  -webkit-border-radius: 40px 40px 40px 40px; }
+
+.inicioImgVelocidad, .inicioImgComodidad, .inicioImgCalidad {
+  border-radius: 200px 200px 200px 200px; }
+
+.inicioPadre > * {
+  text-align: center; }
+
+.inicioCaracteristicasHijo img {
+  width: 200px;
+  height: 200px;
+  margin-top: 1rem; }
+
+/*QUIENES SOMOS*/
+.quienesSomosPadre {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  place-items: center;
+  background-image: url(../Img/imgPortada.jpg); }
+
+.quienesSomosHijo {
+  opacity: 80%; }
+
+.quienesSomosSucursalesPadre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
+.quienesSomosSucursalesHijo {
+  background-color: #67bdce;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 50px;
+  width: 90%; }
+
+.sucursal {
+  text-align: center; }
+
+.tipoSucursal {
+  text-align: center; }
+
+.sucursal__img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 50%; }
+
+ol {
+  text-align: center;
+  font-family: 'Staatliches';
+  list-style: none; }
+
+/*GALGAS*/
+.galgasPadre {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  place-items: center;
+  background-image: url(../Img/imgPortada.jpg); }
+
+.galgasHijo {
+  opacity: 80%; }
+
+.galgasModelosPadre {
+  display: grid;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  align-content: center;
+  grid-template-columns: repeat(3, 3fr); }
+
+.galgasModelosHijo {
+  background-color: #67bdce;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  justify-content: space-between;
+  order: -1;
+  border-radius: 40px 40px 40px 40px;
+  -moz-border-radius: 40px 40px 40px 40px;
+  -webkit-border-radius: 40px 40px 40px 40px; }
+
+.imgGalgas {
+  border-radius: 200px 200px 200px 200px;
+  width: 200px;
+  height: 200px;
+  margin-top: 1rem; }
+
+/*CICLOVIAS*/
+.cicloviasPadre {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  place-items: center;
+  background-image: url(../Img/imgPortada.jpg); }
+
+.cicloviasHijo {
+  opacity: 80%; }
+
+.detallesCicloviasPadre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
+.detallesCicloviasHijo {
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 50px;
+  width: 90%; }
+
+.ciclovias {
+  text-align: center; }
+
+.imgCiclovias {
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: 60%; }
+
+/*CONTACTO*/
+.contactoPadre {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  place-items: center;
+  background-image: url(../Img/imgPortada.jpg); }
+
+.contactoHijo {
+  opacity: 80%; }
+
+fieldset {
+  font-family: 'Staatliches';
+  color: #0b0d0d;
+  font-size: 22px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem; }
+
+.headerSitios {
+  padding-top: 10%; }
+
+.parteInterior {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Staatliches', cursive;
+  font-size: 26px;
+  height: 85%;
+  text-align: center; }
+
+.imgChica {
+  width: 65%;
+  height: 65%;
+  margin: 0.5rem; }
+
+@media screen and (max-width: 768px) {
+  .inicioPadre, .cicloviasPadre, .quienesSomosPadre, .galgasPadre, .contactoPadre {
+    grid-template-columns: 1fr; }
+  .inicioCaracteristicasPadre, .galgasModelosPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column; }
+  p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 4px; } }
+
+@media screen and (max-width: 425px) {
+  header a img {
+    visibility: hidden; }
+  .inicioCaracteristicasPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column; }
+  p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 4px; } }
+
+@media screen and (max-width: 320px) {
+  header a img {
+    visibility: hidden; }
+  .inicioCaracteristicasPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column;
+    padding: 1px; }
+  p {
+    font-size: 11px;
+    text-align: justify;
+    margin: 4px; } }
+
+/*COLORES*/
+/*TAMAÑOS*/
+h1 {
+  font-family: 'Patua One', cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #0b0d0d; }
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Staatliches', cursive;
+  font-size: 2rem;
+  text-align: center;
+  color: #0b0d0d; }
+
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #0b0d0d; }
+
+p {
+  font-family: 'Staatliches';
+  color: #0b0d0d;
+  font-size: 22px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem; }
+
+footer {
+  background-color: #67bdce; }
+  footer ul {
+    padding: 2rem; }
+    footer ul li {
+      list-style: none;
+      font-family: 'Staatliches', cursive;
+      font-size: 1rem;
+      text-align: end;
+      color: #0b0d0d; }
+
+@media screen and (max-width: 768px) {
+  .inicioPadre, .cicloviasPadre, .quienesSomosPadre, .galgasPadre, .contactoPadre {
+    grid-template-columns: 1fr; }
+  .inicioCaracteristicasPadre, .galgasModelosPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column; }
+  p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 4px; } }
+
+@media screen and (max-width: 425px) {
+  header a img {
+    visibility: hidden; }
+  .inicioCaracteristicasPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column; }
+  p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 4px; } }
+
+@media screen and (max-width: 320px) {
+  header a img {
+    visibility: hidden; }
+  .inicioCaracteristicasPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column;
+    padding: 1px; }
+  p {
+    font-size: 11px;
+    text-align: justify;
+    margin: 4px; } }
+
+/*COLORES*/
+/*TAMAÑOS*/
+@media screen and (max-width: 768px) {
+  .inicioPadre, .cicloviasPadre, .quienesSomosPadre, .galgasPadre, .contactoPadre {
+    grid-template-columns: 1fr; }
+  .inicioCaracteristicasPadre, .galgasModelosPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column; }
+  p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 4px; } }
+
+@media screen and (max-width: 425px) {
+  header a img {
+    visibility: hidden; }
+  .inicioCaracteristicasPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column; }
+  p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 4px; } }
+
+@media screen and (max-width: 320px) {
+  header a img {
+    visibility: hidden; }
+  .inicioCaracteristicasPadre {
+    grid-template-columns: 1fr; }
+  .detallesCicloviasPadre {
+    flex-direction: column;
+    padding: 1px; }
+  p {
+    font-size: 11px;
+    text-align: justify;
+    margin: 4px; } }
+
+/*COLORES*/
+/*TAMAÑOS*/
+/*ERROR 404*/
+.body404 {
+  background-color: #67bdce;
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  display: flex;
+  justify-content: center; }
+
+.container404 {
+  text-align: center;
+  width: 100%; }
+
+.boton {
+  text-decoration: none;
+  font-family: 'Staatliches'; }
