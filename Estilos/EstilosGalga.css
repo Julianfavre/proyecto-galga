@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 2rem;
+    background-color: white;
+}
+nav{
+    text-align: center;
+}
+nav li:hover{
+    transform: scale(1.1);
+}
+.menu{
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.menu>li{
+    display: inline-block;
+    padding: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 0.8rem;
+    position: relative;
+    background-color: white;
+}
+.menu>li :hover{
+    color: #0eadca;
+}
+.menu>li>a{
+    text-decoration:none;
+    font-size: 20px;
+}
+.submenu{
+    position: absolute;
+    list-style: none;
+    text-align:center;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 0.8rem;
+    margin-top: 0.5rem;
+    padding:0.5rem;
+    display: none;
+}
+.submenu li a{
+    text-decoration: none;
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+body{
+    background: radial-gradient(circle, rgba(255,255,255,1) 5%, rgba(248,248,247,1) 40%, rgba(236,236,232,1) 80%);
+}
+.imgMediana{
+    width: 50%;
+    height: 50%;
+    margin: 2rem;
+    border: 0.3rem solid transparent;
+    border-color: #3198ac;
+}
+.seccionQuienesSomos{
+    text-align: center;
+}
+h1{
+    font-family: 'Patua One', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #3198ac;
+}
+h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: #0b0d0d;
+}
+h3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #0b0d0d;
+}
+p{
+    font-family: 'Staatliches';
+    color: #0b0d0d;
+    font-size: 22px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+ul{
+    color: #0b0d0d;
+}
+
+table{
+    table-layout: fixed;
+    width: 150vh;
+    height: 70vh;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    border-color:#3198ac;
+    border-collapse:collapse;
+}
+table th{
+    font-style:inherit;
+    background-color:#3198ac;
+}
+ul{
+    list-style: none;
+}
+form{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    padding: 1rem;
+    display: block;
+    width: 60%;
+    border-style:solid;
+    border-color: #3198ac;
+    content:initial;
+    font-family: 'Staatliches', cursive;
+}
+footer{
+    background-color: #3198ac;
+    margin-top: 3%;
+    padding: 2%;
+}
+
+/*FELXBOX SITIOS*/
+.flexPadre{
+    background-color: #3198ac;
+    width: 120vh;
+    height: 40vh;
+    margin: 10% 20%;
+}
+.headerSitios{
+    background-color: #3198ac;
+    height: 8%;
+}
+.parteInterior{
+    display: flex;
+    padding: 2%;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+    justify-content: space-around;
+    height: 85%;
+}
+.aside{
+    background-color: white;
+    width: 25%;
+    padding: 3%;
+}
+.article{
+    background-color: white;
+    display: flex;
+    align-content: center;
+    width: 65%;
+    padding: 3%;
+}
+.imgChica{
+    width: 50%;
+    height: 50%;
+    margin: 0.5rem;
+}
+
+/*FLEXBOX GALERÍA*/
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px
+}
+.filaGaleria{
+    flex: 50%;
+    padding: 5px;
+}
+.imgGaleria{
+    width: 100%;
+    margin-top: 5px;
+}
+
+/*GRID PARA EL INDEX*/
+.padre1{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    place-items: center;
+    background-image: url(../Img/imgPortada.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.padre2{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    align-content: center;
+    grid-template-columns: repeat(3, 3fr);
+}
+.hijo1{
+    background-color: white;
+    opacity: 80%;
+    border-radius: 40px 40px 40px 40px;
+-moz-border-radius: 40px 40px 40px 40px;
+-webkit-border-radius: 40px 40px 40px 40px;
+margin-left: 1rem;
+}
+.caracteristica{
+    background-color: #3198ac;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    justify-content: space-between;
+    order: -1;
+    border-radius: 40px 40px 40px 40px;
+-moz-border-radius: 40px 40px 40px 40px;
+-webkit-border-radius: 40px 40px 40px 40px;
+}
+.imgVelocidad, .imgComodidad, .imgCalidad{
+    border-radius: 200px 200px 200px 200px;
+
+}
+.padre1>*{
+    text-align: center;
+}
+.caracteristica img{
+    width: 200px;
+    height: 200px;
+    margin-top: 1rem;
+}
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 768px){
+    header{
+        justify-content: center;
+    }
+        .padre2{
+            grid-template-columns: repeat(3,3fr);
+        }
+}
+
+@media screen and (max-width:425px){
+    .padre2{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media screen and (max-width:320px){
+    .padre2{
+        grid-template-columns: 1fr;
+    }
+    .caracteristica{
+        background-color: aliceblue;
+    }
+}

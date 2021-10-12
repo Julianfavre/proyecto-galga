@@ -167,6 +167,9 @@ a img {
 
 .inicioCaracteristicasHijo {
   background-color: #67bdce;
+  -webkit-box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
+  box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,6 +260,9 @@ ol {
 
 .galgasModelosHijo {
   background-color: #67bdce;
+  -webkit-box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
+  box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
   display: flex;
   flex-direction: column;
   align-items: center;
