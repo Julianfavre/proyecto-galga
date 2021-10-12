@@ -146,7 +146,7 @@ a img {
 
 /*INDEX*/
 .inicioPadre {
-  height: 100vh;
+  height: 70vh;
   display: grid;
   grid-template-columns: 40% 60%;
   place-items: center;
@@ -194,7 +194,7 @@ a img {
 
 /*QUIENES SOMOS*/
 .quienesSomosPadre {
-  height: 100vh;
+  height: 70vh;
   display: grid;
   grid-template-columns: 40% 60%;
   place-items: center;
@@ -239,7 +239,7 @@ ol {
 
 /*GALGAS*/
 .galgasPadre {
-  height: 100vh;
+  height: 70vh;
   display: grid;
   grid-template-columns: 40% 60%;
   place-items: center;
@@ -282,7 +282,7 @@ ol {
 
 /*CICLOVIAS*/
 .cicloviasPadre {
-  height: 100vh;
+  height: 70vh;
   display: grid;
   grid-template-columns: 40% 60%;
   place-items: center;
@@ -317,7 +317,7 @@ ol {
 
 /*CONTACTO*/
 .contactoPadre {
-  height: 100vh;
+  height: 70vh;
   display: grid;
   grid-template-columns: 40% 60%;
   place-items: center;
