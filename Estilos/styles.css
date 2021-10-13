@@ -215,6 +215,9 @@ a img {
 
 .quienesSomosSucursalesHijo {
   background-color: #67bdce;
+  -webkit-box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
+  box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
   border-radius: 15px;
   padding: 20px;
   margin-bottom: 50px;
