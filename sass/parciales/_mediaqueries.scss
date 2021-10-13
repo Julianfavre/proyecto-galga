@@ -1,0 +1,52 @@
+
+@media screen and (max-width:768px){
+        .inicioPadre, .cicloviasPadre, .quienesSomosPadre, .galgasPadre, .contactoPadre{
+            grid-template-columns: 1fr;
+        }
+        .inicioCaracteristicasPadre, .galgasModelosPadre{
+            grid-template-columns: 1fr;
+        }
+        .detallesCicloviasPadre{
+            flex-direction: column;
+        }
+        p{
+            font-size: $parrafos - 4px;
+            text-align: justify;
+            margin: 4px;
+        }
+    }
+
+@media screen and (max-width:425px){
+    header a img{
+        visibility: hidden;
+    }
+    .inicioCaracteristicasPadre{
+        grid-template-columns: 1fr;
+    }
+    .detallesCicloviasPadre{
+        flex-direction: column;
+    }
+    p{
+        font-size: $parrafos - 6px;
+        text-align: justify;
+        margin: 4px;
+    }
+}
+@media screen and (max-width: 320px) {
+    header a img{
+        visibility: hidden;
+    }
+    .inicioCaracteristicasPadre{
+        grid-template-columns: 1fr;
+    }
+    .detallesCicloviasPadre{
+        flex-direction: column;
+        padding: 1px;
+    }
+    p{
+        font-size: $parrafos/2;
+        text-align: justify;
+        margin: 4px;
+    }
+}
+

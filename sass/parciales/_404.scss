@@ -1,0 +1,20 @@
+@import "../parciales/mediaqueries";
+@import "../parciales/variables";
+
+/*ERROR 404*/
+.body404{
+    background-color: $celeste;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.container404{
+    text-align: center;
+    width: 100%;
+}
+.boton{
+    text-decoration: none;
+    font-family: 'Staatliches';
+}
