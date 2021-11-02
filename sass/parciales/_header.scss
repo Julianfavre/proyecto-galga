@@ -4,9 +4,8 @@
 header{
     display: flex;
     justify-content:space-between;
-    align-items: flex-end;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    align-items: center;
+    padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 3rem;
     background-color: $blanco;
@@ -17,6 +16,7 @@ header{
             font-family: 'Staatliches';
             letter-spacing: 1px;
             word-spacing: 1px;
+            padding-top: 2rem;
             .itemMenu{
                 color:$blanco;
                 display: inline-block;
@@ -47,9 +47,12 @@ a img{
 }
 .submenu{
     position: absolute;
+    left: auto;
+    right: -25px;
     list-style: none;
+    width: 8.5rem;
     text-align:center;
-    font-size: 12px;
+    font-size: 14px;
     background-color: $blanco;
     border-radius: 0.8rem;
     margin-top: 0.5rem;

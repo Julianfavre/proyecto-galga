@@ -7,12 +7,29 @@
 /*COLORES*/
 /*TAMAÑOS*/
 @media screen and (max-width: 768px) {
+  h1 {
+    text-align: start;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    font-size: 2.5rem; }
+  .nav {
+    flex-direction: column; }
   .inicioPadre, .cicloviasPadre, .quienesSomosPadre, .galgasPadre, .contactoPadre {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    place-items: initial; }
   .inicioCaracteristicasPadre, .galgasModelosPadre {
     grid-template-columns: 1fr; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
   .detallesCicloviasPadre {
     flex-direction: column; }
+  fieldset {
+    font-size: 18px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
   p {
     font-size: 18px;
     text-align: justify;
@@ -21,34 +38,72 @@
 @media screen and (max-width: 425px) {
   header a img {
     visibility: hidden; }
+  .inicioPadre {
+    place-items: initial; }
+  h1 {
+    text-align: start;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    font-size: 2rem; }
   .inicioCaracteristicasPadre {
     grid-template-columns: 1fr; }
   .detallesCicloviasPadre {
     flex-direction: column; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .quienesSomosSucursalesPadre {
+    grid-template-columns: 1fr; }
   p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
-    margin: 4px; } }
+    margin: 4px; }
+  fieldset {
+    font-size: 18px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .parteInterior {
+    grid-template-columns: 1fr; }
+  .sitios {
+    padding-bottom: 2rem; } }
 
 @media screen and (max-width: 320px) {
   header a img {
     visibility: hidden; }
   .inicioCaracteristicasPadre {
     grid-template-columns: 1fr; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .quienesSomosSucursalesPadre {
+    grid-template-columns: 1fr; }
   .detallesCicloviasPadre {
     flex-direction: column;
     padding: 1px; }
+  .detallesCicloviasHijo {
+    width: 100%; }
+  fieldset {
+    font-size: 16px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .parteInterior {
+    grid-template-columns: 1fr; }
+  .sitios {
+    padding-bottom: 2rem; }
   p {
-    font-size: 11px;
+    font-size: 16px;
     text-align: justify;
     margin: 4px; } }
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  align-items: center;
+  padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 3rem;
   background-color: #EDEDED; }
@@ -58,7 +113,8 @@ header {
       list-style: none;
       font-family: 'Staatliches';
       letter-spacing: 1px;
-      word-spacing: 1px; }
+      word-spacing: 1px;
+      padding-top: 2rem; }
       header .nav .menu .itemMenu {
         color: #EDEDED;
         display: inline-block;
@@ -83,9 +139,12 @@ a img {
 
 .submenu {
   position: absolute;
+  left: auto;
+  right: -25px;
   list-style: none;
+  width: 8.5rem;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   background-color: #EDEDED;
   border-radius: 0.8rem;
   margin-top: 0.5rem;
@@ -103,12 +162,29 @@ a img {
 /*COLORES*/
 /*TAMAÑOS*/
 @media screen and (max-width: 768px) {
+  h1 {
+    text-align: start;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    font-size: 2.5rem; }
+  .nav {
+    flex-direction: column; }
   .inicioPadre, .cicloviasPadre, .quienesSomosPadre, .galgasPadre, .contactoPadre {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    place-items: initial; }
   .inicioCaracteristicasPadre, .galgasModelosPadre {
     grid-template-columns: 1fr; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
   .detallesCicloviasPadre {
     flex-direction: column; }
+  fieldset {
+    font-size: 18px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
   p {
     font-size: 18px;
     text-align: justify;
@@ -117,25 +193,64 @@ a img {
 @media screen and (max-width: 425px) {
   header a img {
     visibility: hidden; }
+  .inicioPadre {
+    place-items: initial; }
+  h1 {
+    text-align: start;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    font-size: 2rem; }
   .inicioCaracteristicasPadre {
     grid-template-columns: 1fr; }
   .detallesCicloviasPadre {
     flex-direction: column; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .quienesSomosSucursalesPadre {
+    grid-template-columns: 1fr; }
   p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
-    margin: 4px; } }
+    margin: 4px; }
+  fieldset {
+    font-size: 18px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .parteInterior {
+    grid-template-columns: 1fr; }
+  .sitios {
+    padding-bottom: 2rem; } }
 
 @media screen and (max-width: 320px) {
   header a img {
     visibility: hidden; }
   .inicioCaracteristicasPadre {
     grid-template-columns: 1fr; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .quienesSomosSucursalesPadre {
+    grid-template-columns: 1fr; }
   .detallesCicloviasPadre {
     flex-direction: column;
     padding: 1px; }
+  .detallesCicloviasHijo {
+    width: 100%; }
+  fieldset {
+    font-size: 16px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .parteInterior {
+    grid-template-columns: 1fr; }
+  .sitios {
+    padding-bottom: 2rem; }
   p {
-    font-size: 11px;
+    font-size: 16px;
     text-align: justify;
     margin: 4px; } }
 
@@ -192,6 +307,12 @@ a img {
   height: 200px;
   margin-top: 1rem; }
 
+.inicioFomentando {
+  padding-bottom: 2rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  text-align: justify; }
+
 /*QUIENES SOMOS*/
 .quienesSomosPadre {
   height: 70vh;
@@ -203,15 +324,22 @@ a img {
 .quienesSomosHijo {
   opacity: 80%; }
 
+.nosotros {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  text-align: justify; }
+
 .quienesSomosSucursalesPadre {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-right: 1rem;
-  padding-left: 1rem; }
+  padding-right: 2rem;
+  padding-left: 1rem;
+  align-content: center;
+  grid-template-columns: 50% 50%; }
 
 .quienesSomosSucursalesHijo {
   background-color: #67bdce;
@@ -220,8 +348,7 @@ a img {
   box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
   border-radius: 15px;
   padding: 20px;
-  margin-bottom: 50px;
-  width: 90%; }
+  margin-bottom: 50px; }
 
 .sucursal {
   text-align: center; }
@@ -307,6 +434,7 @@ ol {
   border-radius: 15px;
   padding: 20px;
   margin-bottom: 50px;
+  text-align: justify;
   width: 90%; }
 
 .ciclovias {
@@ -315,8 +443,8 @@ ol {
 .imgCiclovias {
   display: block;
   margin: auto;
-  width: 60%;
-  height: 60%; }
+  width: 70%;
+  height: 70%; }
 
 /*CONTACTO*/
 .contactoPadre {
@@ -331,20 +459,28 @@ ol {
 
 fieldset {
   font-family: 'Staatliches';
+  text-align: center;
+  background-color: #67bdce;
   color: #0b0d0d;
   font-size: 22px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 6rem;
-  margin-right: 6rem; }
+  padding-top: 2rem;
+  margin-top: 4rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  border-radius: 40px 40px 40px 40px;
+  -moz-border-radius: 40px 40px 40px 40px;
+  -webkit-border-radius: 40px 40px 40px 40px;
+  -webkit-box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66);
+  box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.66); }
 
 .headerSitios {
-  padding-top: 10%; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .parteInterior {
   display: grid;
   grid-template-columns: 33% 34% 33%;
-  padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
   font-family: 'Staatliches', cursive;
@@ -358,12 +494,29 @@ fieldset {
   margin: 0.5rem; }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    text-align: start;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    font-size: 2.5rem; }
+  .nav {
+    flex-direction: column; }
   .inicioPadre, .cicloviasPadre, .quienesSomosPadre, .galgasPadre, .contactoPadre {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    place-items: initial; }
   .inicioCaracteristicasPadre, .galgasModelosPadre {
     grid-template-columns: 1fr; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
   .detallesCicloviasPadre {
     flex-direction: column; }
+  fieldset {
+    font-size: 18px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
   p {
     font-size: 18px;
     text-align: justify;
@@ -372,25 +525,64 @@ fieldset {
 @media screen and (max-width: 425px) {
   header a img {
     visibility: hidden; }
+  .inicioPadre {
+    place-items: initial; }
+  h1 {
+    text-align: start;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    font-size: 2rem; }
   .inicioCaracteristicasPadre {
     grid-template-columns: 1fr; }
   .detallesCicloviasPadre {
     flex-direction: column; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .quienesSomosSucursalesPadre {
+    grid-template-columns: 1fr; }
   p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
-    margin: 4px; } }
+    margin: 4px; }
+  fieldset {
+    font-size: 18px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .parteInterior {
+    grid-template-columns: 1fr; }
+  .sitios {
+    padding-bottom: 2rem; } }
 
 @media screen and (max-width: 320px) {
   header a img {
     visibility: hidden; }
   .inicioCaracteristicasPadre {
     grid-template-columns: 1fr; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .quienesSomosSucursalesPadre {
+    grid-template-columns: 1fr; }
   .detallesCicloviasPadre {
     flex-direction: column;
     padding: 1px; }
+  .detallesCicloviasHijo {
+    width: 100%; }
+  fieldset {
+    font-size: 16px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .parteInterior {
+    grid-template-columns: 1fr; }
+  .sitios {
+    padding-bottom: 2rem; }
   p {
-    font-size: 11px;
+    font-size: 16px;
     text-align: justify;
     margin: 4px; } }
 
@@ -421,13 +613,13 @@ h3 {
   color: #0b0d0d; }
 
 p {
-  font-family: 'Roboto';
+  font-family: 'Varela Round', sans-serif;
   color: #0b0d0d;
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 6rem;
-  margin-right: 6rem; }
+  margin-left: 4rem;
+  margin-right: 4rem; }
 
 footer {
   background-color: #67bdce; }
@@ -444,12 +636,29 @@ footer {
   padding-right: 1rem; }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    text-align: start;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    font-size: 2.5rem; }
+  .nav {
+    flex-direction: column; }
   .inicioPadre, .cicloviasPadre, .quienesSomosPadre, .galgasPadre, .contactoPadre {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    place-items: initial; }
   .inicioCaracteristicasPadre, .galgasModelosPadre {
     grid-template-columns: 1fr; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
   .detallesCicloviasPadre {
     flex-direction: column; }
+  fieldset {
+    font-size: 18px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
   p {
     font-size: 18px;
     text-align: justify;
@@ -458,37 +667,93 @@ footer {
 @media screen and (max-width: 425px) {
   header a img {
     visibility: hidden; }
+  .inicioPadre {
+    place-items: initial; }
+  h1 {
+    text-align: start;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    font-size: 2rem; }
   .inicioCaracteristicasPadre {
     grid-template-columns: 1fr; }
   .detallesCicloviasPadre {
     flex-direction: column; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .quienesSomosSucursalesPadre {
+    grid-template-columns: 1fr; }
   p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
-    margin: 4px; } }
+    margin: 4px; }
+  fieldset {
+    font-size: 18px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .parteInterior {
+    grid-template-columns: 1fr; }
+  .sitios {
+    padding-bottom: 2rem; } }
 
 @media screen and (max-width: 320px) {
   header a img {
     visibility: hidden; }
   .inicioCaracteristicasPadre {
     grid-template-columns: 1fr; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .quienesSomosSucursalesPadre {
+    grid-template-columns: 1fr; }
   .detallesCicloviasPadre {
     flex-direction: column;
     padding: 1px; }
+  .detallesCicloviasHijo {
+    width: 100%; }
+  fieldset {
+    font-size: 16px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .parteInterior {
+    grid-template-columns: 1fr; }
+  .sitios {
+    padding-bottom: 2rem; }
   p {
-    font-size: 11px;
+    font-size: 16px;
     text-align: justify;
     margin: 4px; } }
 
 /*COLORES*/
 /*TAMAÑOS*/
 @media screen and (max-width: 768px) {
+  h1 {
+    text-align: start;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    font-size: 2.5rem; }
+  .nav {
+    flex-direction: column; }
   .inicioPadre, .cicloviasPadre, .quienesSomosPadre, .galgasPadre, .contactoPadre {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    place-items: initial; }
   .inicioCaracteristicasPadre, .galgasModelosPadre {
     grid-template-columns: 1fr; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
   .detallesCicloviasPadre {
     flex-direction: column; }
+  fieldset {
+    font-size: 18px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
   p {
     font-size: 18px;
     text-align: justify;
@@ -497,25 +762,64 @@ footer {
 @media screen and (max-width: 425px) {
   header a img {
     visibility: hidden; }
+  .inicioPadre {
+    place-items: initial; }
+  h1 {
+    text-align: start;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    font-size: 2rem; }
   .inicioCaracteristicasPadre {
     grid-template-columns: 1fr; }
   .detallesCicloviasPadre {
     flex-direction: column; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .quienesSomosSucursalesPadre {
+    grid-template-columns: 1fr; }
   p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
-    margin: 4px; } }
+    margin: 4px; }
+  fieldset {
+    font-size: 18px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .parteInterior {
+    grid-template-columns: 1fr; }
+  .sitios {
+    padding-bottom: 2rem; } }
 
 @media screen and (max-width: 320px) {
   header a img {
     visibility: hidden; }
   .inicioCaracteristicasPadre {
     grid-template-columns: 1fr; }
+  .inicioFomentando, .nosotros, .quienesSomosPadre {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .quienesSomosSucursalesPadre {
+    grid-template-columns: 1fr; }
   .detallesCicloviasPadre {
     flex-direction: column;
     padding: 1px; }
+  .detallesCicloviasHijo {
+    width: 100%; }
+  fieldset {
+    font-size: 16px;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .parteInterior {
+    grid-template-columns: 1fr; }
+  .sitios {
+    padding-bottom: 2rem; }
   p {
-    font-size: 11px;
+    font-size: 16px;
     text-align: justify;
     margin: 4px; } }
 
